@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MemoryLane</title>
+  <!------ Font Awesome ------>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+  <!------ Google Fonts ------>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!------ Stylesheet ------>
+  <link rel="stylesheet" href="style.css" />
+  <!------ Queries ------>
+  <link rel="stylesheet" href="queries.css" />
+</head>
+
+<body>
+  <div class="backdrop hide"></div>
+  <div class="image-popup hide">
+    <button class="close-btn"><ion-icon name="close-circle-outline"></ion-icon></button>
+    <img src="" class="large-img" alt="">
+    <button class="controls pre-btn"><img src="pre.png"></button>
+    <button class="controls nxt-btn"><img src="nxt.png"></button>
+  </div>
+  <!------ Scroll To Top Button ------>
+  <button id="scroll-top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+  <!------ Header ------>
+  <header>
+    <nav>
+      <a href="#home" id="logo">MemoryLane</a>
+      <i class="fas fa-bars" id="ham-menu"></i>
+      <ul id="nav-bar">
+        <li>
+          <a href="#home">Home</a>
+        </li>
+        <li>
+          <a href="#aboutme">About Me</a>
+        </li>
+        <li>
+          <a href="#Contact">Contact</a>
+        </li>
+
+      </ul>
+    </nav>
+  </header>
+  <!------ Section: Hero ------>
+  <section class="hero" id="home">
+    <img src="header-shape.svg" id="header-shape" />
+    <div class="hero-content">
+      <h1>Photo Gallery App</h1>
+      <p>
+        "A picture is worth a thousand words and every picture tells a story and captures a moment in time and the photo
+        gallery has a thousand stories to tell."
+      </p>
+
+    </div>
+    <div class="hero-img">
+      <img src="hero.png" />
+    </div>
+  </section>
+
+  <!------ PhotoGallery ------>
+  <section>
+    <div class="container">
+      <div class="header">
+        <h1 class="logo">PhotoGallery</h1>
+        <form>
+          <input type="text" placeholder="Search">
+          <ion-icon name="search-outline"></ion-icon>
+        </form>
+      </div>
+      <div class="gallery">
+        <!------ add here ------>
+        <!-- pop-up window -->
+        <div class="image-popup hide">
+          <button class="close-btn"></button>
+          <a href="#" class="download-btn">download image</a>
+          <img src="" class="large-img" alt="">
+          <button class="controls pre-btn"><img src="img/pre.png"></button>
+          <button class="controls nxt-btn"><img src="img/nxt.png"></button>
+        </div>
+      </div>
+      <a class="load-more" data-img="curated">Load More</a>
+    </div>
+  </section>
+
+  <!------ About ------>
+  <div id="aboutme">
+    <div class="about-section">
+      <div class="inner-container">
+        <h1>About Me</h1>
+        <p class="text">
+          "I am a passionate and driven pre-final undergraduate student with a keen interest in web development and data
+          structures and algorithms. As a tech geek, I am always eager to learn new things and stay up-to-date with the
+          latest trends and technologies in the field.With a strong foundation in web development and DSA, I am
+          confident in my ability to create efficient and user-friendly web applications that meet the needs of modern
+          users. I am dedicated to continuous learning and growth, and I am excited about the possibilities that lie
+          ahead in my career as a web developer.
+        </p>
+        <div class="skills">
+          <span>Web Developer</span>
+          <span>Coding</span>
+          <span>Tech- Geek</span>
+        </div>
+      </div>
+    </div>
+  </div>>
+
+  <!------ Footer ------>
+
+  <div id="Contact">
+    <footer>
+      <div class="row footer-about">
+
+        <div class="social-links">
+          <a href="https://www.instagram.com/prakhar4004/ ">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="#">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="https://github.com/prakhar4004">
+            <i class="fa fa-github"></i>
+          </a>
+        </div>
+      </div>
+      <div class="row footer-contact">
+        <div class="column">
+          <h4>Phone No</h4>
+          <p>+91 8875575389</p>
+        </div>
+        <div class="column">
+          <h4>Email</h4>
+          <p>pshprakhar@gmail.com</p>
+        </div>
+      </div>
+      <p>
+        Copyright @prakhar4004
+      </p>
+    </footer>
+  </div>
+
+  <!------ Script ------>
+  <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+  <script src="./main.js"></script>
+  <script src="script.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
